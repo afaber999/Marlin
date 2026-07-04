@@ -1211,6 +1211,8 @@
  */
 
  // AF CHANGES STEPS FOR PRUSA i3 STEEL
+ // XY GT 2 belt, 20 tooth pulley, 1.8° stepper, 1/16 microstepping -> 80 steps/mm
+ // Z 5mm pitch leadscrew, 1.8° stepper, 1/16 microstepping -> 4000 steps/mm
 #define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 4000, 104 }
 
 /**
