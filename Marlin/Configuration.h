@@ -1212,8 +1212,9 @@
 
  // AF CHANGES STEPS FOR PRUSA i3 STEEL
  // XY GT 2 belt, 20 tooth pulley, 1.8° stepper, 1/16 microstepping -> 80 steps/mm
- // Z 5mm pitch leadscrew, 1.8° stepper, 1/16 microstepping -> 4000 steps/mm
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 4000, 104 }
+ // Z 8 mm leadscrew -> 2mm per turn, 1.8° stepper 200 steps per revolustion
+ // therefore 1mm = 100 steps,, 1/16 microstepping -> 1600 steps/mm
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 1600, 104 }
 
 /**
  * Default Max Feed Rate (linear=mm/s, rotational=°/s)
@@ -1661,7 +1662,7 @@
 // :{ 0:'Low', 1:'High' }
 #define X_ENABLE_ON 0
 #define Y_ENABLE_ON 0
-#define Z_ENABLE_ON 0
+#define Z_ENABLE_ON 1 // FOR 8mm Z LEADSCREW
 #define E_ENABLE_ON 0 // For all extruders
 //#define I_ENABLE_ON 0
 //#define J_ENABLE_ON 0
