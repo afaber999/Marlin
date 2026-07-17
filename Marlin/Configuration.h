@@ -692,10 +692,10 @@
     // #define DEFAULT_KI   1.08
     // #define DEFAULT_KD 114.00
 
-    // AF HOTEND PID SETTINGS
-    #define DEFAULT_KP 27.01
-    #define DEFAULT_KI 1.64
-    #define DEFAULT_KD 111.20    
+    // AF NEW HOTEND PID SETTINGS
+    #define DEFAULT_KP 22.43
+    #define DEFAULT_KI 0.99
+    #define DEFAULT_KD 126.78    
   #endif
 #else
   #define BANG_MAX 255    // Limit hotend current while in bang-bang mode; 255=full current
@@ -787,10 +787,11 @@
   // #define DEFAULT_BED_KI .023
   // #define DEFAULT_BED_KD 305.4
   // AF BED PRUSA PID SETTINGS
-  #define DEFAULT_BED_KP 150.13
-  #define DEFAULT_BED_KI 29.56
-  #define DEFAULT_BED_KD 508.34
+  #define DEFAULT_BED_KP 90.66
+  #define DEFAULT_BED_KI 17.57
+  #define DEFAULT_BED_KD 311.89
   
+
   // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.
 #else
   //#define BED_LIMIT_SWITCHING   // Keep the bed temperature within BED_HYSTERESIS of the target
